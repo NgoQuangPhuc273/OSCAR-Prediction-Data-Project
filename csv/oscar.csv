@@ -1,0 +1,581 @@
+year,film,oscar_winner
+1927,7th Heaven,0
+1927,The Racket,0
+1928,The Broadway Melody,1
+1928,Alibi,0
+1928,Hollywood Revue,0
+1928,In Old Arizona,0
+1928,The Patriot,0
+1929,All Quiet on the Western Front,1
+1929,The Big House,0
+1929,Disraeli,0
+1929,The Divorcee,0
+1929,The Love Parade,0
+1930,Cimarron,1
+1930,East Lynne,0
+1930,The Front Page,0
+1930,Skippy,0
+1930,Trader Horn,0
+1931,Grand Hotel,1
+1931,Arrowsmith,0
+1931,Bad Girl,0
+1931,The Champ,0
+1931,Five Star Final,0
+1931,One Hour with You,0
+1931,Shanghai Express,0
+1931,The Smiling Lieutenant,0
+1932,Cavalcade,1
+1932,42nd Street,0
+1932,A Farewell to Arms,0
+1932,I Am a Fugitive from a Chain Gang,0
+1932,Lady for a Day,0
+1932,Little Women,0
+1932,The Private Life of Henry VIII,0
+1932,She Done Him Wrong,0
+1932,Smilin' Through,0
+1932,State Fair,0
+1934,It Happened One Night,1
+1934,The Barretts of Wimpole Street,0
+1934,Cleopatra,0
+1934,Flirtation Walk,0
+1934,The Gay Divorcee,0
+1934,Here Comes the Navy,0
+1934,The House of Rothschild,0
+1934,Imitation of Life,0
+1934,One Night of Love,0
+1934,The Thin Man,0
+1934,Viva Villa!,0
+1934,The White Parade,0
+1935,Mutiny on the Bounty,1
+1935,Alice Adams,0
+1935,Broadway Melody of 1936,0
+1935,Captain Blood,0
+1935,David Copperfield,0
+1935,The Informer,0
+1935,The Lives of a Bengal Lancer,0
+1935,A Midsummer Night's Dream,0
+1935,Les Misérables,0
+1935,Naughty Marietta,0
+1935,Ruggles of Red Gap,0
+1935,Top Hat,0
+1936,The Great Ziegfeld,1
+1936,Anthony Adverse,0
+1936,Dodsworth,0
+1936,Libeled Lady,0
+1936,Mr. Deeds Goes to Town,0
+1936,Romeo and Juliet,0
+1936,San Francisco,0
+1936,The Story of Louis Pasteur,0
+1936,A Tale of Two Cities,0
+1936,Three Smart Girls,0
+1937,The Life of Emile Zola,1
+1937,The Awful Truth,0
+1937,Captains Courageous,0
+1937,Dead End,0
+1937,The Good Earth,0
+1937,In Old Chicago,0
+1937,Lost Horizon,0
+1937,One Hundred Men and a Girl,0
+1937,Stage Door,0
+1937,A Star Is Born,0
+1938,You Can't Take It with You,1
+1938,The Adventures of Robin Hood,0
+1938,Alexander's Ragtime Band,0
+1938,Boys Town,0
+1938,The Citadel,0
+1938,Four Daughters,0
+1938,Grand Illusion,0
+1938,Jezebel,0
+1938,Pygmalion,0
+1938,Test Pilot,0
+1939,Gone with the Wind,1
+1939,Dark Victory,0
+1939,"Goodbye, Mr. Chips",0
+1939,Love Affair,0
+1939,Mr. Smith Goes to Washington,0
+1939,Ninotchka,0
+1939,Of Mice and Men,0
+1939,Stagecoach,0
+1939,The Wizard of Oz,0
+1939,Wuthering Heights,0
+1940,Rebecca,1
+1940,"All This, and Heaven Too",0
+1940,Foreign Correspondent,0
+1940,The Grapes of Wrath,0
+1940,The Great Dictator,0
+1940,Kitty Foyle,0
+1940,The Letter,0
+1940,The Long Voyage Home,0
+1940,Our Town,0
+1940,The Philadelphia Story,0
+1941,How Green Was My Valley,1
+1941,Blossoms in the Dust,0
+1941,Citizen Kane,0
+1941,Here Comes Mr. Jordan,0
+1941,Hold Back the Dawn,0
+1941,The Little Foxes,0
+1941,The Maltese Falcon,0
+1941,One Foot in Heaven,0
+1941,Sergeant York,0
+1941,Suspicion,0
+1942,Mrs. Miniver,1
+1942,49th Parallel,0
+1942,Kings Row,0
+1942,The Magnificent Ambersons,0
+1942,The Pied Piper,0
+1942,The Pride of the Yankees,0
+1942,Random Harvest,0
+1942,The Talk of the Town,0
+1942,Wake Island,0
+1942,Yankee Doodle Dandy,0
+1943,Casablanca,1
+1943,For Whom the Bell Tolls,0
+1943,Heaven Can Wait,0
+1943,The Human Comedy,0
+1943,In Which We Serve,0
+1943,Madame Curie,0
+1943,The More the Merrier,0
+1943,The Ox-Bow Incident,0
+1943,The Song of Bernadette,0
+1943,Watch on the Rhine,0
+1944,Going My Way,1
+1944,Double Indemnity,0
+1944,Gaslight,0
+1944,Since You Went Away,0
+1944,Wilson,0
+1945,The Lost Weekend,1
+1945,Anchors Aweigh,0
+1945,The Bells of St. Mary's,0
+1945,Mildred Pierce,0
+1945,Spellbound,0
+1946,The Best Years of Our Lives,1
+1946,Henry V,0
+1946,It's a Wonderful Life,0
+1946,The Razor's Edge,0
+1946,The Yearling,0
+1947,Gentleman's Agreement,1
+1947,The Bishop's Wife,0
+1947,Crossfire,0
+1947,Great Expectations,0
+1947,Miracle on 34th Street,0
+1948,Hamlet,1
+1948,Johnny Belinda,0
+1948,The Red Shoes,0
+1948,The Snake Pit,0
+1948,The Treasure of the Sierra Madre,0
+1949,All the King's Men,1
+1949,Battleground,0
+1949,The Heiress,0
+1949,A Letter to Three Wives,0
+1949,Twelve O'Clock High,0
+1950,All About Eve,1
+1950,Born Yesterday,0
+1950,Father of the Bride,0
+1950,King Solomon's Mines,0
+1950,Sunset Boulevard,0
+1951,An American in Paris,1
+1951,Decision Before Dawn,0
+1951,A Place in the Sun,0
+1951,Quo Vadis,0
+1951,A Streetcar Named Desire,0
+1952,The Greatest Show on Earth,1
+1952,High Noon,0
+1952,Ivanhoe,0
+1952,Moulin Rouge,0
+1952,The Quiet Man,0
+1953,From Here to Eternity,1
+1953,Julius Caesar,0
+1953,The Robe,0
+1953,Roman Holiday,0
+1953,Shane,0
+1954,On the Waterfront,1
+1954,The Caine Mutiny,0
+1954,The Country Girl,0
+1954,Seven Brides for Seven Brothers,0
+1954,Three Coins in the Fountain,0
+1955,Marty,1
+1955,Love Is a Many-Splendored Thing,0
+1955,Mister Roberts,0
+1955,Picnic,0
+1955,The Rose Tattoo,0
+1956,Around the World in 80 Days,1
+1956,Friendly Persuasion,0
+1956,Giant,0
+1956,The King and I,0
+1956,The Ten Commandments,0
+1957,The Bridge on the River Kwai,1
+1957,12 Angry Men,0
+1957,Peyton Place,0
+1957,Sayonara,0
+1957,Witness for the Prosecution,0
+1958,Gigi,1
+1958,Auntie Mame,0
+1958,Cat on a Hot Tin Roof,0
+1958,The Defiant Ones,0
+1958,Separate Tables,0
+1959,Ben-Hur,1
+1959,Anatomy of a Murder,0
+1959,The Diary of Anne Frank,0
+1959,The Nun's Story,0
+1959,Room at the Top,0
+1960,The Apartment,1
+1960,The Alamo,0
+1960,Elmer Gantry,0
+1960,Sons and Lovers,0
+1960,The Sundowners,0
+1961,West Side Story,1
+1961,Fanny,0
+1961,The Guns of Navarone,0
+1961,The Hustler,0
+1961,Judgment at Nuremberg,0
+1962,Lawrence of Arabia,1
+1962,The Longest Day,0
+1962,The Music Man,0
+1962,Mutiny on the Bounty,0
+1962,To Kill a Mockingbird,0
+1963,Tom Jones,1
+1963,America America,0
+1963,Cleopatra,0
+1963,How the West Was Won,0
+1963,Lilies of the Field,0
+1964,My Fair Lady,1
+1964,Becket,0
+1964,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,0
+1964,Mary Poppins,0
+1964,Zorba the Greek,0
+1965,The Sound of Music,1
+1965,Darling,0
+1965,Doctor Zhivago,0
+1965,Ship of Fools,0
+1965,A Thousand Clowns,0
+1966,A Man for All Seasons,1
+1966,Alfie,0
+1966,"The Russians Are Coming, the Russians Are Coming",0
+1966,The Sand Pebbles,0
+1966,Who's Afraid of Virginia Woolf?,0
+1967,In the Heat of the Night,1
+1967,Bonnie and Clyde,0
+1967,Doctor Dolittle,0
+1967,The Graduate,0
+1967,Guess Who's Coming to Dinner,0
+1968,Oliver!,1
+1968,Funny Girl,0
+1968,The Lion in Winter,0
+1968,"Rachel, Rachel",0
+1968,Romeo and Juliet,0
+1969,Midnight Cowboy,1
+1969,Anne of the Thousand Days,0
+1969,Butch Cassidy and the Sundance Kid,0
+1969,"Hello, Dolly!",0
+1969,Z,0
+1970,Patton,1
+1970,Airport,0
+1970,Five Easy Pieces,0
+1970,Love Story,0
+1970,M*A*S*H,0
+1971,The French Connection,1
+1971,A Clockwork Orange,0
+1971,Fiddler on the Roof,0
+1971,The Last Picture Show,0
+1971,Nicholas and Alexandra,0
+1972,The Godfather,1
+1972,Cabaret,0
+1972,Deliverance,0
+1972,The Emigrants,0
+1972,Sounder,0
+1973,The Sting,1
+1973,American Graffiti,0
+1973,Cries and Whispers,0
+1973,The Exorcist,0
+1973,A Touch of Class,0
+1974,The Godfather Part II,1
+1974,Chinatown,0
+1974,The Conversation,0
+1974,Lenny,0
+1974,The Towering Inferno,0
+1975,One Flew Over the Cuckoo's Nest,1
+1975,Barry Lyndon,0
+1975,Dog Day Afternoon,0
+1975,Jaws,0
+1975,Nashville,0
+1976,Rocky,1
+1976,All the President's Men,0
+1976,Bound for Glory,0
+1976,Network,0
+1976,Taxi Driver,0
+1977,Annie Hall,1
+1977,The Goodbye Girl,0
+1977,Julia,0
+1977,Star Wars,0
+1977,The Turning Point,0
+1978,The Deer Hunter,1
+1978,Coming Home,0
+1978,Heaven Can Wait,0
+1978,Midnight Express,0
+1978,An Unmarried Woman,0
+1979,Kramer vs. Kramer,1
+1979,All That Jazz,0
+1979,Apocalypse Now,0
+1979,Breaking Away,0
+1979,Norma Rae,0
+1980,Ordinary People,1
+1980,Coal Miner's Daughter,0
+1980,The Elephant Man,0
+1980,Raging Bull,0
+1980,Tess,0
+1981,Chariots of Fire,1
+1981,Atlantic City,0
+1981,On Golden Pond,0
+1981,Raiders of the Lost Ark,0
+1981,Reds,0
+1982,Gandhi,1
+1982,E.T. the Extra-Terrestrial,0
+1982,Missing,0
+1982,Tootsie,0
+1982,The Verdict,0
+1983,Terms of Endearment,1
+1983,The Big Chill,0
+1983,The Dresser,0
+1983,The Right Stuff,0
+1983,Tender Mercies,0
+1984,Amadeus,1
+1984,The Killing Fields,0
+1984,A Passage to India,0
+1984,Places in the Heart,0
+1984,A Soldier's Story,0
+1985,Out of Africa,1
+1985,The Color Purple,0
+1985,Kiss of the Spider Woman,0
+1985,Prizzi's Honor,0
+1985,Witness,0
+1986,Platoon,1
+1986,Children of a Lesser God,0
+1986,Hannah and Her Sisters,0
+1986,The Mission,0
+1986,A Room with a View,0
+1987,The Last Emperor,1
+1987,Broadcast News,0
+1987,Fatal Attraction,0
+1987,Hope and Glory,0
+1987,Moonstruck,0
+1988,Rain Man,1
+1988,The Accidental Tourist,0
+1988,Dangerous Liaisons,0
+1988,Mississippi Burning,0
+1988,Working Girl,0
+1989,Driving Miss Daisy,1
+1989,Born on the Fourth of July,0
+1989,Dead Poets Society,0
+1989,Field of Dreams,0
+1989,My Left Foot,0
+1990,Dances with Wolves,1
+1990,Awakenings,0
+1990,Ghost,0
+1990,The Godfather Part III,0
+1990,Goodfellas,0
+1991,The Silence of the Lambs,1
+1991,Beauty and the Beast,0
+1991,Bugsy,0
+1991,JFK,0
+1991,The Prince of Tides,0
+1992,Unforgiven,1
+1992,The Crying Game,0
+1992,A Few Good Men,0
+1992,Howards End,0
+1992,Scent of a Woman,0
+1993,Schindler's List,1
+1993,The Fugitive,0
+1993,In the Name of the Father,0
+1993,The Piano,0
+1993,The Remains of the Day,0
+1994,Forrest Gump,1
+1994,Four Weddings and a Funeral,0
+1994,Pulp Fiction,0
+1994,Quiz Show,0
+1994,The Shawshank Redemption,0
+1995,Braveheart,1
+1995,Apollo 13,0
+1995,Babe,0
+1995,The Postman (Il Postino),0
+1995,Sense and Sensibility,0
+1996,The English Patient,1
+1996,Fargo,0
+1996,Jerry Maguire,0
+1996,Secrets & Lies,0
+1996,Shine,0
+1997,Titanic,1
+1997,As Good as It Gets,0
+1997,The Full Monty,0
+1997,Good Will Hunting,0
+1997,L.A. Confidential,0
+1998,Shakespeare in Love,1
+1998,Elizabeth,0
+1998,Life Is Beautiful,0
+1998,Saving Private Ryan,0
+1998,The Thin Red Line,0
+1999,American Beauty,1
+1999,The Cider House Rules,0
+1999,The Green Mile,0
+1999,The Insider,0
+1999,The Sixth Sense,0
+2000,Gladiator,1
+2000,Chocolat,0
+2000,"Crouching Tiger, Hidden Dragon",0
+2000,Erin Brockovich,0
+2000,Traffic,0
+2001,A Beautiful Mind,1
+2001,Gosford Park,0
+2001,In the Bedroom,0
+2001,The Lord of the Rings: The Fellowship of the Ring,0
+2001,Moulin Rouge!,0
+2002,Chicago,1
+2002,Gangs of New York,0
+2002,The Hours,0
+2002,The Lord of the Rings: The Two Towers,0
+2002,The Pianist,0
+2003,The Lord of the Rings: The Return of the King,1
+2003,Lost in Translation,0
+2003,Master and Commander: The Far Side of the World,0
+2003,Mystic River,0
+2003,Seabiscuit,0
+2004,Million Dollar Baby,1
+2004,The Aviator,0
+2004,Finding Neverland,0
+2004,Ray,0
+2004,Sideways,0
+2005,Crash,1
+2005,Brokeback Mountain,0
+2005,Capote,0
+2005,"Good Night, and Good Luck",0
+2005,Munich,0
+2006,The Departed,1
+2006,Babel,0
+2006,Letters from Iwo Jima,0
+2006,Little Miss Sunshine,0
+2006,The Queen,0
+2007,No Country for Old Men,1
+2007,Atonement,0
+2007,Juno,0
+2007,Michael Clayton,0
+2007,There Will Be Blood,0
+2008,Slumdog Millionaire,1
+2008,The Curious Case of Benjamin Button,0
+2008,Frost/Nixon,0
+2008,Milk,0
+2008,The Reader,0
+2009,The Hurt Locker,1
+2009,Avatar,0
+2009,The Blind Side,0
+2009,District 9,0
+2009,An Education,0
+2009,Inglourious Basterds,0
+2009,Precious: Based on the Novel 'Push' by Sapphire,0
+2009,A Serious Man,0
+2009,Up,0
+2009,Up in the Air,0
+2010,The King's Speech,1
+2010,127 Hours,0
+2010,Black Swan,0
+2010,The Fighter,0
+2010,Inception,0
+2010,The Kids Are All Right,0
+2010,The Social Network,0
+2010,Toy Story 3,0
+2010,True Grit,0
+2010,Winter's Bone,0
+2011,The Artist,1
+2011,The Descendants,0
+2011,Extremely Loud & Incredibly Close,0
+2011,The Help,0
+2011,Hugo,0
+2011,Midnight in Paris,0
+2011,Moneyball,0
+2011,The Tree of Life,0
+2011,War Horse,0
+2012,Argo,1
+2012,Amour,0
+2012,Beasts of the Southern Wild,0
+2012,Django Unchained,0
+2012,Life of Pi,0
+2012,Lincoln,0
+2012,Les Misérables,0
+2012,Silver Linings Playbook,0
+2012,Zero Dark Thirty,0
+2013,12 Years a Slave,1
+2013,American Hustle,0
+2013,Captain Phillips,0
+2013,Dallas Buyers Club,0
+2013,Gravity,0
+2013,Her,0
+2013,Nebraska,0
+2013,Philomena,0
+2013,The Wolf of Wall Street,0
+2014,Birdman or (The Unexpected Virtue of Ignorance),1
+2014,American Sniper,0
+2014,Boyhood,0
+2014,The Grand Budapest Hotel,0
+2014,The Imitation Game,0
+2014,Selma,0
+2014,The Theory of Everything,0
+2014,Whiplash,0
+2015,Spotlight,1
+2015,The Big Short,0
+2015,Bridge of Spies,0
+2015,Brooklyn,0
+2015,Mad Max: Fury Road,0
+2015,The Martian,0
+2015,The Revenant,0
+2015,Room,0
+2016,Moonlight,1
+2016,Arrival,0
+2016,Fences,0
+2016,Hacksaw Ridge,0
+2016,Hell or High Water,0
+2016,Hidden Figures,0
+2016,La La Land,0
+2016,Lion,0
+2016,Manchester by the Sea,0
+2017,The Shape of Water,1
+2017,Call Me by Your Name,0
+2017,Darkest Hour,0
+2017,Dunkirk,0
+2017,Get Out,0
+2017,Lady Bird,0
+2017,Phantom Thread,0
+2017,The Post,0
+2017,"Three Billboards Outside Ebbing, Missouri",0
+2018,Green Book,1
+2018,Black Panther,0
+2018,BlacKkKlansman,0
+2018,Bohemian Rhapsody,0
+2018,The Favourite,0
+2018,Roma,0
+2018,A Star Is Born,0
+2018,Vice,0
+2019,Parasite,1
+2019,Ford v Ferrari,0
+2019,The Irishman,0
+2019,Jojo Rabbit,0
+2019,Joker,0
+2019,Little Women,0
+2019,Marriage Story,0
+2019,1917,0
+2019,Once Upon a Time in Hollywood,0
+2020,Nomadland,1
+2020,The Father,0
+2020,Judas and the Black Messiah,0
+2020,Mank,0
+2020,Minari,0
+2020,Promising Young Woman,0
+2020,Sound of Metal,0
+2020,The Trial of the Chicago 7,0
+2021,CODA,1
+2021,Belfast,0
+2021,Don't Look Up,0
+2021,Drive My Car,0
+2021,Dune,0
+2021,King Richard,0
+2021,Licorice Pizza,0
+2021,Nightmare Alley,0
+2021,The Power of the Dog,0
+2021,West Side Story,0
