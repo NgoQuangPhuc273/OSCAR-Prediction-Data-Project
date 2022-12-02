@@ -16,6 +16,7 @@ pip install bs4
 pip install sklearn
 pip install matplotlib
 pip install seaborn
+pip install plotly
 ```
 
 ## IV. Running:
@@ -28,5 +29,18 @@ pip install seaborn
 
 4. Run winner_prediction.py to see the predicted winners for the next Oscar!
 
+However, that is when the project is finished!
+
+At the moment, we have successfully self-extract, scraping, cleaning and merging the movies data through several websites such as:
+
+https://en.wikipedia.org/
+
+https://www.imdb.com/search/title/?title_type=feature&release_date=2020&sort=num_votes,desc&count=100
+
+as well as some APIs such as:
+```python
+rotten_tomatoes_scraper
+Cinemagoer
+```
 
 

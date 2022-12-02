@@ -84,7 +84,7 @@ forest = RandomForestClassifier(
 
 my_forest = forest.fit(X_train, y_train)
 
-forest_importances = pd.DataFrame(my_forest.feature_importances_.round(3), feat_awards, columns=["Importances Weightage"])
+forest_importances = pd.DataFrame(my_forest.feature_importances_.round(3), feat_awards, columns=["Weight"])
 
 print(forest_importances)
 print('Score', my_forest.score(X_train, y_train))
