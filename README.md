@@ -1,4 +1,4 @@
-# ECON 312: Predict Academy Results through Machine Learning
+# ECON 312: Predict The Academy Award Results Through Machine Learning
 
 Phuc Ngo, Zach Moskowitz, Ryan Blasberg
 
