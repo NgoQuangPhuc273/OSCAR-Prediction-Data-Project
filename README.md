@@ -1,2 +1,2 @@
-# ECON 312 Final Project:
-# OSCAR-Prediction-Data-Project
+# ECON 312 Final Project: Predict Academy Results through Machine Learning
+
