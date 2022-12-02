@@ -47,12 +47,12 @@ https://www.metacritic.com/feature/film-critics-pick-10-best-movies-of-2020 (met
 
 https://www.imdb.com/search/title/?title_type=feature&release_date=2020&sort=num_votes,desc&count=100 (imdb data in specific year)
 
-as well as some APIs such as:
+#### -> as well as some APIs such as:
 ```python
 rotten_tomatoes_scraper
 Cinemagoer
 ```
-to create separate datasets in csv folder:
+#### -> to create separate datasets in csv folder:
 Rating and information datasets:
 ```
 imdb.csv
@@ -73,7 +73,7 @@ GG_drama.csv
 PGA.csv
 ```
 
-then merge all of them together to form a complete data set: 
+#### -> then merge all of them together to form a complete data set: 
 ```
 first_movie_dataset.csv
 ```
