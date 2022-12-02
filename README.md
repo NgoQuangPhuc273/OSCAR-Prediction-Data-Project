@@ -37,22 +37,22 @@ This was a very confusing and complicated at first since since we have to deal w
 
 At the moment, we have successfully self-extract, scraping, cleaning and merging the movies data from 1990 to 2020 through several websites such as:
 
-https://en.wikipedia.org/ (for awards data)
+https://en.wikipedia.org/ (awards data)
 
-https://www.the-numbers.com/movie/budgets/all (for box office)
+https://www.the-numbers.com/movie/budgets/all (box office)
 
-https://editorial.rottentomatoes.com/guide/best-movies/ (for rotten tomatoes score)
+https://editorial.rottentomatoes.com/guide/best-movies/ (rotten tomatoes score)
 
-https://www.metacritic.com/feature/film-critics-pick-10-best-movies-of-2020 (for metacritics score)
+https://www.metacritic.com/feature/film-critics-pick-10-best-movies-of-2020 (metacritics score)
 
 https://www.imdb.com/search/title/?title_type=feature&release_date=2020&sort=num_votes,desc&count=100 (imdb data in specific year)
 
-#### as well as some APIs such as:
+as well as some APIs such as:
 ```python
 rotten_tomatoes_scraper
 Cinemagoer
 ```
-### to create separate datasets in csv folder:
+to create separate datasets in csv folder:
 Rating and information datasets:
 ```
 imdb.csv
@@ -73,7 +73,7 @@ GG_drama.csv
 PGA.csv
 ```
 
-#### Then merge all of them together to form a complete data set: 
+then merge all of them together to form a complete data set: 
 ```
 first_movie_dataset.csv
 ```
@@ -89,9 +89,9 @@ For Random Forest Classifier, we use
 
 1. Run extract_main.py to extract data.
 
-2. Do not run this new version of merging.py and go the next step.
+2. Do not run this new version of merging.py and go the next step!
 
-3. Run implement_random_forest.py to execute the program and see some first results.
+3. Run implement_random_forest.py to execute the program and see some first results (important metrics ranking).
 
 
 ## V. Future Work:
