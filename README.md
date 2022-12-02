@@ -35,7 +35,7 @@ Initally, we used the alternate IMDB_API (or CinemaGoer) and OMDB to extract dat
 
 This was a very confusing and complicated at first since since we have to deal with many data types at once. However, the process becomes more and more exciting when we get used to it due to the fact that we can deeply understand how a data flows (or pipelines) can work.
 
-At the moment, we have successfully self-extract, scraping, cleaning and merging the movies data from 1990 to 2020 through several websites such as:
+#### At the moment, we have successfully self-extract, scraping, cleaning and merging the movies data from 1990 to 2020 through several websites such as:
 
 https://en.wikipedia.org/ (awards data)
 
@@ -47,12 +47,12 @@ https://www.metacritic.com/feature/film-critics-pick-10-best-movies-of-2020 (met
 
 https://www.imdb.com/search/title/?title_type=feature&release_date=2020&sort=num_votes,desc&count=100 (imdb data in specific year)
 
-#### -> as well as some APIs such as:
+#### as well as some useful APIs:
 ```python
 rotten_tomatoes_scraper
 Cinemagoer
 ```
-#### -> to create separate datasets in csv folder:
+#### to create separate datasets in csv folder:
 Rating and information datasets:
 ```
 imdb.csv
@@ -73,7 +73,7 @@ GG_drama.csv
 PGA.csv
 ```
 
-#### -> then merge all of them together to form a complete data set: 
+#### then merge all of them together to form a complete data set: 
 ```
 first_movie_dataset.csv
 ```
