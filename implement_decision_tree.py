@@ -4,6 +4,6 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 import seaborn as sb
 sb.set()
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import accuracy_score,confusion_matrix,classification_report
+from sklearn.ensemble import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
+from sklearn import tree

@@ -214,7 +214,7 @@ def ccma():
             winner=1
             year=url[-4:]
             CCMA_result.append((movie, winner, year))
-            
+              
         for tag in page_soup.find_all('div',class_="aw-mc2"):
             for i in tag.find_all('a'):
                 movie=i.get('title')

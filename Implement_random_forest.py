@@ -5,19 +5,12 @@ import plotly.express as px
 import seaborn as sb
 sb.set()
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score,confusion_matrix,classification_report
 from sklearn.model_selection import train_test_split
-import graphviz
-from sklearn.tree import export_graphviz
 from sklearn import tree
-from sklearn.metrics import roc_curve
-from sklearn.metrics import roc_auc_score
-from matplotlib import pyplot
-from matplotlib.pyplot import figure
+
 
 data = pd.read_csv('csv/first_movie_dataset.csv')
 
-# feat. = feature
 feat_awards = ['GG_drama_winner', 'GG_drama_nominee', 'GG_comedy_winner', 'GG_comedy_nominee',
                'BAFTA_winner', 'BAFTA_nominee', 'DGA_winner', 'DGA_nominee',
                'PGA_winner', 'PGA_nominee', 'CCMA_winner', 'CCMA_nominee',
