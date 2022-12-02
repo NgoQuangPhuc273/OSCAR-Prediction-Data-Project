@@ -58,8 +58,18 @@ def get_RT_ratings(movie_title):
     print(" Audience Score: ", rt_audience_score,"%\n ","Critics Score: ", rt_critics_score, "%")
     rotten_score = pd.DataFrame()
 
-    return rt_critics_score, rt_audience_score
+    return movie_title, rt_critics_score, rt_audience_score
 
-# movie_list = ["The Hangover", "Old Boy", "Avengers"]
-# for movie in movie_list:
-#     get_RT_ratings(movie)
+def main():
+    movie_list = []
+    title_list = []
+    rt_critics_score_list = []
+    rt_audience_score_list = []
+
+    for movie in movie_list:
+        movie_title, rt_critics_score, rt_audience_score = get_RT_ratings(movie)
+        
+        title_list.append(movie_title)
+        rt_critics_score_list.append(rt_critics_score)
+        rt_audience_score_list.append(rt_audience_score)
+main()

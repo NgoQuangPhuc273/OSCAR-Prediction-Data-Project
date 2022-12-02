@@ -13,7 +13,6 @@ def get_url_data(url):
     html_soup = BeautifulSoup(response.content,"lxml")
 
     movie_containers = html_soup.find_all('div', {'class':'lister-item mode-advanced'})
-    # print(len(movie_containers))
     
     movie_dict = get_data(movie_containers)
     imdb_1 = pd.DataFrame(movie_dict)
@@ -88,7 +87,7 @@ def main():
 
     for year in range(1999,2020):
         url = ("https://www.imdb.com/search/title/?title_type=feature&release_date=%s&sort=num_votes,desc&count=100" %year)
-        print("Getting movies data for year of", year)
+        print("Getting best movies data in", year)
         imdb_1 = get_url_data(url)
         imdb = imdb.append(imdb_1, ignore_index=True)
 
@@ -141,4 +140,4 @@ def main():
     print(imdb)
     imdb.to_csv("csv/imdb.csv", index=False)
 
-main()
+# main()

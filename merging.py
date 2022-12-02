@@ -3,6 +3,13 @@ import numpy as np
 
 imdb = pd.read_csv('csv/imdb.csv')
 oscar = pd.read_csv('csv/oscar.csv')
+bafta = pd.read_csv('csv/BAFTA.csv')
+dga = pd.read_csv('csv/DGA.csv')
+ggCom = pd.read_csv('csv/GG_comedy.csv')
+ggDrm = pd.read_csv('csv/GG_drama.csv')
+pga = pd.read_csv('csv/PGA.csv')
+# gpalm = pd.read_csv('csv/GPalm.csv')
+ccma = pd.read_csv('csv/CCMA.csv')
 
 #make each to list
 oscarList = oscar['film'].tolist()
@@ -29,22 +36,9 @@ for movie in imdbList:
     else:
         winner.append(0)
 
-#df for winner
 imdb['Oscar_winner'] = pd.DataFrame(np.array(winner))
-
-#df for nominees
 imdb['Oscar_nominee'] = pd.DataFrame(np.array(nominee))
 
-#import the different files
-bafta = pd.read_csv('csv/BAFTA.csv')
-dga = pd.read_csv('csv/DGA.csv')
-ggCom = pd.read_csv('csv/GG_comedy.csv')
-ggDrm = pd.read_csv('csv/GG_drama.csv')
-pga = pd.read_csv('csv/PGA.csv')
-# gpalm = pd.read_csv('csv/GPalm.csv')
-ccma = pd.read_csv('csv/CCMA.csv')
-
-#create new imdbList
 imdbList = imdb['Movie'].tolist()
 
 def get_winNom(imdbList, sourceDF):
@@ -113,25 +107,22 @@ def get_money(imdbList, numbersDF):
             world_mon.append(0)
     return budget_mon, dom_mon, world_mon
 
-#get money data
-# myBudget, myDomestic, myWorld = get_money(imdbList, numbers)
-
-#for bafta award
+#bafta award
 bafta_winner, bafta_nom = get_winNom(imdbList, bafta)
 
-#for dga
+#dga
 dga_winner, dga_nom = get_winNom(imdbList, dga)
 
-#for ggCom
+#ggCom
 ggCom_winner, ggCom_nom = get_winNom(imdbList, ggCom)
 
-#for ggDrm
+#ggDrm
 ggDrm_winner, ggDrm_nom = get_winNom(imdbList, ggDrm)
 
-#for pga
+#pga
 pga_winner, pga_nom = get_winNom(imdbList, pga)
 
-#for ccma
+#ccma
 ccma_winner, ccma_nom = get_winNom(imdbList, ccma)
 
 #golden palm
@@ -150,7 +141,7 @@ col_Names = ["BAFTA_winner", "BAFTA_nominee", "DGA_winner", "DGA_nominee",
 mini = 0
 maxi = 17
 for i in range(mini, maxi):
-    df = pd.DataFrame(np.array(LoL[i]), columns={""+col_Names[i]+""})
+    df = pd.DataFrame(np.array(LoL[i]), columns={"" + col_Names[i] + ""})
     imdb = pd.concat([imdb, df],axis=1)
 
 imdb["International gross"] = " "
