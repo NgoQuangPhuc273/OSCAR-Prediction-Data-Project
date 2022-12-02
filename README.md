@@ -35,11 +35,15 @@ Initally, we used the alternate IMDB_API (or CinemaGoer) and OMDB to extract dat
 
 This was a very confusing and complicated at first since since we have to deal with many data types at once. However, the process becomes more and more exciting when we get used to it due to the fact that we can deeply understand how a data flows (or pipelines) can work.
 
-At the moment, we have successfully self-extract, scraping, cleaning and merging the movies data through several websites such as:
+At the moment, we have successfully self-extract, scraping, cleaning and merging the movies data from 1990 to 2020 through several websites such as:
 
 https://en.wikipedia.org/ (for awards data)
 
 https://www.the-numbers.com/movie/budgets/all (for box office)
+
+https://editorial.rottentomatoes.com/guide/best-movies/ (for rotten tomatoes score)
+
+https://www.metacritic.com/feature/film-critics-pick-10-best-movies-of-2020 (for metacritics score)
 
 https://www.imdb.com/search/title/?title_type=feature&release_date=2020&sort=num_votes,desc&count=100 (imdb data in specific year)
 
@@ -48,7 +52,28 @@ https://www.imdb.com/search/title/?title_type=feature&release_date=2020&sort=num
 rotten_tomatoes_scraper
 Cinemagoer
 ```
-#### and then merge all of them together to form a complete data set: 
+### to create separate datasets in csv folder:
+Rating and information datasets:
+```
+imdb.csv
+box_office.csv
+rotten.csv
+
+```
+
+Awards datasets:
+
+```
+oscar.csv
+BAFTA.csv
+CCMA.csv
+DGA.csv
+GG_comedy.csv
+GG_drama.csv
+PGA.csv
+```
+
+#### Then merge all of them together to form a complete data set: 
 ```
 first_movie_dataset.csv
 ```
@@ -70,9 +95,9 @@ For Random Forest Classifier, we use
 
 
 ## V. Future Work:
-The hardest and most frustrate work for us in this project so far is properly extracting the data from different websites, cleaning and merging data to create a perfect unbias data set.
+The hardest and most frustrate work for us in this project so far is properly extracting the data from different websites, cleaning (unformated names and numbers, general stemming and lemmatization) and merging data to create a perfect unbias primary data set.
 
-Hence, our future work will only focus on:
+Hence, our future work will focus on:
 
 - Fixing bugs resulted from box office extracting and add cannes data to the dataset.
 - Finish prediction file based on results from Random Forest Classifier.
