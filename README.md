@@ -125,7 +125,7 @@ However, we currently face some trouble with extracting the box office data as w
 The "first_movie_dataset" is the first dataset that we collected before adding new metrics. It contains almost all data that we think is neccessary for prediction. Thus, we can still run implement_random_forest.py and calculating_algo_accuracy.py to see the needed attributes and there importance ranking (or weight).
 
 
-## The correct way to run the program is:
+### Therefore, the correct way to run the program for now is:
 
 1. Run extract_main.py to extract data.
 
