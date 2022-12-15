@@ -39,18 +39,10 @@ def get_budget_gross(list_tr):
     return budget_dict
 
 def main():
+    print("Extracting Box Office Data...")
     for i in range(1, 5700, 100):
         url = (f"https://www.the-numbers.com/movie/budgets/all/{i}")
         response = rq.get(url)
         html_soup = BeautifulSoup(response.content,"lxml")
-        list_tr = html_soup.find('table').find_all('tr')
-        
-        budget_dict = get_budget_gross(list_tr)
-        budget_iter_df = pd.DataFrame(budget_dict)
-        box_office = box_office.append(budget_iter_df, ignore_index=True)
-        
-        sleep(randint(1,30))
-
-    box_office.to_csv('csv/box_office.csv', index=False)
 
 # main()

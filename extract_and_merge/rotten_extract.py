@@ -65,11 +65,12 @@ def main():
     title_list = []
     rt_critics_score_list = []
     rt_audience_score_list = []
-
+    
+    print("Extracting Rotten Tomatoes Data...")
     for movie in movie_list:
         movie_title, rt_critics_score, rt_audience_score = get_RT_ratings(movie)
         
         title_list.append(movie_title)
         rt_critics_score_list.append(rt_critics_score)
         rt_audience_score_list.append(rt_audience_score)
-main()
+# main()

@@ -1,0 +1,11 @@
+,Year,Movie,Oscar_nominee,Oscar_winner,Predicted Win Rate
+107,2016,La La Land,1,0,0.727
+116,2016,Moonlight,1,1,0.082
+122,2016,Manchester by the Sea,1,0,0.045
+105,2016,Arrival,1,0,0.027
+100,2016,Deadpool,0,0,0.027
+130,2016,Lion,1,0,0.018
+110,2016,Split,0,0,0.018
+133,2016,Hell or High Water,1,0,0.018
+109,2016,Hacksaw Ridge,1,0,0.009
+114,2016,10 Cloverfield Lane,0,0,0.009

@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn import tree
 
 
-data = pd.read_csv('csv/first_movie_dataset.csv')
+data = pd.read_csv('csv/final_movie_dataset.csv')
 
 feat_awards = ['GG_drama_winner', 'GG_drama_nominee', 'GG_comedy_winner', 'GG_comedy_nominee',
                'BAFTA_winner', 'BAFTA_nominee', 'DGA_winner', 'DGA_nominee',

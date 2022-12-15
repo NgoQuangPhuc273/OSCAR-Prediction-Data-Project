@@ -1,0 +1,11 @@
+,Year,Movie,Oscar_nominee,Oscar_winner,Predicted Win Rate
+408,2019,1917,1,0,0.409
+402,2019,Once Upon a Time in Hollywood,1,0,0.182
+404,2019,Parasite,1,1,0.11
+400,2019,Joker,1,0,0.071
+407,2019,The Irishman,1,0,0.058
+418,2019,Jojo Rabbit,1,0,0.045
+413,2019,Marriage Story,1,0,0.032
+442,2019,Little Women,1,0,0.019
+498,2019,Richard Jewell,0,0,0.013
+415,2019,Us,0,0,0.013

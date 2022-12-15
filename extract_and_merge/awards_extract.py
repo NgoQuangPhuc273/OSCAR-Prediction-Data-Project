@@ -28,7 +28,7 @@ def academy():
                     a = film_col.find('i').find('a')
                     oscar_results.append((current_year, a.get_text('title'), winner))
                 except:
-                    print()
+                    print("Extracting Movie Awards Data...")
             else:
                 continue
 
@@ -57,7 +57,8 @@ def dga():
                 a = film_col.find('i').find('a')
                 dga_results.append((current_year, a.get('title'), winner))
             except:
-                print(f"Problem with {row}")
+                # print(f"Problem with {row}")
+                continue
                 traceback.print_exc()
 
     pd.DataFrame(dga_results, columns = ['year','film','winner']).to_csv('csv/DGA.csv', index = False)
@@ -81,7 +82,8 @@ def bafta():
             elif len(columns) == 4:
                 film_col = columns[0]
             else:
-                print(f"Wrong number of columns in {row}")
+                # print(f"Wrong number of columns in {row}")
+                continue
                 
             winner = film_col.get('style') == 'background:#ccc;'
             if winner == True:
@@ -92,8 +94,8 @@ def bafta():
                 a = film_col.find('a')
                 bafta_results.append((current_year, a.get('title'), winner))
             except:
-                print(f"Problem with {row}")
-                
+                # print(f"Problem with {row}")
+                continue
                 traceback.print_exc()
     pd.DataFrame(bafta_results, columns = ['year','film','winner']).to_csv('csv/BAFTA.csv', index = False)
 
@@ -230,8 +232,6 @@ def main():
     dga()
     bafta()
     pga()
-    globes()
-    # cannes()
     ccma()
 
 # main()

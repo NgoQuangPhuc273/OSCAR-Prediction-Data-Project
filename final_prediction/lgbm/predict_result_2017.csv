@@ -1,0 +1,11 @@
+,Year,Movie,Oscar_nominee,Oscar_winner,Predicted Win Rate
+207,2017,Get Out,1,0,0.721
+224,2017,Lady Bird,1,0,0.109
+205,2017,Dunkirk,1,0,0.089
+211,2017,"Three Billboards Outside Ebbing, Missouri",1,0,0.07
+213,2017,The Shape of Water,1,1,0.009
+230,2017,Call Me by Your Name,1,0,0.001
+222,2017,The Greatest Showman,0,0,0.001
+200,2017,Logan,0,0,0.0
+269,2017,The Circle,0,0,0.0
+270,2017,Gerald's Game,0,0,0.0

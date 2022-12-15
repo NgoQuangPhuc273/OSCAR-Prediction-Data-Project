@@ -1,0 +1,11 @@
+,Year,Movie,Oscar_nominee,Oscar_winner,Predicted Win Rate
+213,2017,The Shape of Water,1,1,0.472
+211,2017,"Three Billboards Outside Ebbing, Missouri",1,0,0.189
+230,2017,Call Me by Your Name,1,0,0.066
+224,2017,Lady Bird,1,0,0.057
+207,2017,Get Out,1,0,0.057
+236,2017,"I, Tonya",0,0,0.028
+246,2017,The Post,1,0,0.028
+205,2017,Dunkirk,1,0,0.019
+232,2017,Mother!,0,0,0.019
+257,2017,Phantom Thread,1,0,0.009

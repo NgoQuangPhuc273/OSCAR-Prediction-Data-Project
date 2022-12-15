@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sb
 sb.set()
 
-df = pd.read_csv('csv/first_movie_dataset.csv')
+df = pd.read_csv('csv/final_movie_dataset.csv')
 
 # Accuracy
 def get_rate(conArray):

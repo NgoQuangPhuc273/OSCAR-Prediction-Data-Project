@@ -1,0 +1,11 @@
+,Year,Movie,Oscar_nominee,Oscar_winner,Predicted Win Rate
+330,2018,Roma,1,0,0.275
+309,2018,Green Book,1,1,0.211
+303,2018,Bohemian Rhapsody,1,0,0.101
+321,2018,BlacKkKlansman,1,0,0.064
+344,2018,Vice,1,0,0.064
+325,2018,The Favourite,1,0,0.055
+310,2018,A Star Is Born,1,0,0.037
+301,2018,Black Panther,1,0,0.037
+334,2018,Crazy Rich Asians,0,0,0.028
+326,2018,First Man,0,0,0.028

@@ -1,0 +1,11 @@
+,Year,Movie,Oscar_nominee,Oscar_winner,Predicted Win Rate
+1,2015,Mad Max: Fury Road,1,0,0.921
+4,2015,The Revenant,1,0,0.064
+9,2015,Spotlight,1,1,0.01
+14,2015,The Big Short,1,0,0.002
+2,2015,The Martian,1,0,0.002
+64,2015,The Good Dinosaur,0,0,0.0
+74,2015,Concussion,0,0,0.0
+73,2015,Hardcore Henry,0,0,0.0
+72,2015,Hitman: Agent 47,0,0,0.0
+71,2015,Demolition,0,0,0.0

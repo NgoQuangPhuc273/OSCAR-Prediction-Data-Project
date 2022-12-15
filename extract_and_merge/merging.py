@@ -3,12 +3,13 @@ import numpy as np
 
 imdb = pd.read_csv('csv/imdb.csv')
 oscar = pd.read_csv('csv/oscar.csv')
+numbers = pd.read_csv('csv/numbers.csv')
 bafta = pd.read_csv('csv/BAFTA.csv')
 dga = pd.read_csv('csv/DGA.csv')
 ggCom = pd.read_csv('csv/GG_comedy.csv')
 ggDrm = pd.read_csv('csv/GG_drama.csv')
 pga = pd.read_csv('csv/PGA.csv')
-# gpalm = pd.read_csv('csv/GPalm.csv')
+gpalm = pd.read_csv('csv/GPalm.csv')
 ccma = pd.read_csv('csv/CCMA.csv')
 
 #make each to list
@@ -107,31 +108,34 @@ def get_money(imdbList, numbersDF):
             world_mon.append(0)
     return budget_mon, dom_mon, world_mon
 
-#bafta award
+#get money data
+myBudget, myDomestic, myWorld = get_money(imdbList, numbers)
+
+#for bafta award
 bafta_winner, bafta_nom = get_winNom(imdbList, bafta)
 
-#dga
+#for dga
 dga_winner, dga_nom = get_winNom(imdbList, dga)
 
-#ggCom
+#for ggCom
 ggCom_winner, ggCom_nom = get_winNom(imdbList, ggCom)
 
-#ggDrm
+#for ggDrm
 ggDrm_winner, ggDrm_nom = get_winNom(imdbList, ggDrm)
 
-#pga
+#for pga
 pga_winner, pga_nom = get_winNom(imdbList, pga)
 
-#ccma
+#for ccma
 ccma_winner, ccma_nom = get_winNom(imdbList, ccma)
 
 #golden palm
-# gpalm_winner, gpalm_nom = get_winNom(imdbList, gpalm)
+gpalm_winner, gpalm_nom = get_winNom(imdbList, gpalm)
 
-LoL = [bafta_winner, bafta_nom, dga_winner, dga_nom, 
+award_list = [bafta_winner, bafta_nom, dga_winner, dga_nom, 
        ggCom_winner, ggCom_nom, ggDrm_winner, ggDrm_nom, 
-       pga_winner, pga_nom,
-       ccma_winner, ccma_nom]
+       pga_winner, pga_nom, gpalm_winner, gpalm_nom,
+       ccma_winner, ccma_nom, myBudget, myDomestic, myWorld]
 
 col_Names = ["BAFTA_winner", "BAFTA_nominee", "DGA_winner", "DGA_nominee",
              "GG_comedy_winner", "GG_comedy_nominee", "GG_drama_winner", "GG_drama_nominee", 
@@ -141,11 +145,21 @@ col_Names = ["BAFTA_winner", "BAFTA_nominee", "DGA_winner", "DGA_nominee",
 mini = 0
 maxi = 17
 for i in range(mini, maxi):
-    df = pd.DataFrame(np.array(LoL[i]), columns={"" + col_Names[i] + ""})
+    df = pd.DataFrame(np.array(award_list[i]), columns={""+col_Names[i]+""})
     imdb = pd.concat([imdb, df],axis=1)
-
+    
 imdb["International gross"] = " "
-
 imdb['International gross'] = imdb['Worldwide gross'].sub(imdb['Domestic (US) gross'])
 
-imdb.to_csv('csv/first_movie_dataset.csv', index=False)
+imdb["Golden_Bear_winner"] = 0
+imdb["Golden_Bear_nominee"] = 0
+imdb["Golden_Lion_winner"] = 0
+imdb["Golden_Lion_nominee"] = 0
+imdb["PCA_winner"] = 0    
+imdb["PCA_nominee"] = 0  
+imdb["NYFCC_winner"] = 0
+imdb["NYFCC_nominee"] = 0 
+imdb["OFCS_winner"] = 0    
+imdb["OFCS_nominee"] = 0
+
+imdb.to_csv('csv/final_movie_dataset.csv', index=False)

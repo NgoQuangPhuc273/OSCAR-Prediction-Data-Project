@@ -7,15 +7,12 @@ year,film,winner
 1,Elmer Gantry (film),0
 1,Hiroshima mon amour,0
 1,Inherit the Wind (1960 film),0
-1,Let's Make Love,0
 1,Black Orpheus,0
 1,Never on Sunday,0
 1,Saturday Night and Sunday Morning (film),0
 1,Shadows (1959 film),0
-1,Spartacus (film),0
 1,The Testament of Orpheus,0
 1,The Trials of Oscar Wilde,0
-1,Tunes of Glory,0
 1,Ballad of a Soldier,1
 1,The Hustler,1
 1,The World of Apu,0
@@ -24,7 +21,6 @@ year,film,winner
 1,The Long and the Short and the Tall (film),0
 1,Rocco and His Brothers,0
 1,The Sundowners (1960 film),0
-1,A Taste of Honey (film),0
 1,The Hole (1960 film),0
 1,Whistle Down the Wind (film),0
 1,Lawrence of Arabia (film),1
@@ -35,10 +31,8 @@ year,film,winner
 1,The Naked Island,0
 1,Jules and Jim,0
 1,A Kind of Loving (film),0
-1,The L-Shaped Room,0
 1,Lola (1961 film),0
 1,The Manchurian Candidate (1962 film),0
-1,The Miracle Worker (1962 film),0
 1,Only Two Can Play,0
 1,Phaedra (film),0
 1,Through a Glass Darkly (film),0
@@ -49,38 +43,29 @@ year,film,winner
 1,8½,0
 1,Billy Liar (film),0
 1,David and Lisa,0
-1,Days of Wine and Roses (film),0
 1,Divorce Italian Style,0
 1,Hud (1963 film),0
 1,Knife in the Water (film),0
 1,The Four Days of Naples (film),0
 1,The Servant (1963 film),0
-1,This Sporting Life,0
 1,To Kill a Mockingbird (film),0
 1,Dr. Strangelove,1
 1,Becket (1964 film),0
-1,The Pumpkin Eater,0
-1,The Train (1964 film),0
 1,My Fair Lady (film),1
 1,Hamlet (1964 film),0
 1,The Hill (film),0
-1,The Knack ...and How to Get It,0
 1,Zorba the Greek (film),0
 1,Who's Afraid of Virginia Woolf? (film),1
 1,Doctor Zhivago (film),0
 1,Morgan – A Suitable Case for Treatment,0
-1,The Spy Who Came in from the Cold (film),0
 1,A Man for All Seasons (1966 film),1
 1,Bonnie and Clyde (film),0
-1,In the Heat of the Night (film),0
 1,A Man and a Woman,0
 1,The Graduate,1
 1,2001: A Space Odyssey (film),0
-1,Oliver! (film),0
 1,Closely Watched Trains,0
 1,Midnight Cowboy,1
 1,Oh! What a Lovely War,0
-1,Women in Love (film),0
 1,Z (1969 film),0
 1,Butch Cassidy and the Sundance Kid,1
 1,Kes (film),0
@@ -93,19 +78,16 @@ year,film,winner
 1,Cabaret (1972 film),1
 1,A Clockwork Orange (film),0
 1,The French Connection (film),0
-1,The Last Picture Show,0
 1,Day for Night (film),1
 1,The Day of the Jackal (film),0
 1,The Discreet Charm of the Bourgeoisie,0
 1,Don't Look Now,0
 1,"Lacombe, Lucien",1
 1,Chinatown (1974 film),0
-1,The Last Detail,0
 1,Murder on the Orient Express (1974 film),0
 1,Alice Doesn't Live Here Anymore,1
 1,Barry Lyndon,0
 1,Dog Day Afternoon,0
-1,Jaws (film),0
 1,One Flew Over the Cuckoo's Nest (film),1
 1,All the President's Men (film),0
 1,Bugsy Malone,0
@@ -113,15 +95,12 @@ year,film,winner
 1,Annie Hall,1
 1,A Bridge Too Far (film),0
 1,Network (1976 film),0
-1,Rocky,0
 1,Julia (1977 film),1
 1,Close Encounters of the Third Kind,0
 1,Midnight Express (film),0
 1,Star Wars (film),0
 1,Manhattan (1979 film),1
 1,Apocalypse Now,0
-1,The China Syndrome,0
-1,The Deer Hunter,0
 1,The Elephant Man (film),1
 1,Being There,0
 1,Kagemusha,0
@@ -129,15 +108,11 @@ year,film,winner
 1,Chariots of Fire,1
 1,Atlantic City (1980 film),0
 1,The French Lieutenant's Woman (film),0
-1,Gregory's Girl,0
 1,Raiders of the Lost Ark,0
 1,Gandhi (film),1
 1,E.T. the Extra-Terrestrial,0
-1,Missing (1982 film),0
-1,On Golden Pond (1981 film),0
 1,Educating Rita (film),1
 1,Heat and Dust (film),0
-1,Local Hero (film),0
 1,Tootsie,0
 1,The Killing Fields (film),1
 1,The Dresser (1983 film),0
@@ -145,16 +120,13 @@ year,film,winner
 1,A Private Function,0
 1,The Purple Rose of Cairo,1
 1,Amadeus (film),0
-1,Back to the Future,0
 1,A Passage to India (film),0
 1,Witness (1985 film),0
 1,A Room with a View (1985 film),1
 1,Hannah and Her Sisters,0
 1,The Mission (1986 film),0
-1,Mona Lisa (1986 film),0
 1,Jean de Florette,1
 1,Cry Freedom,0
-1,Hope and Glory (film),0
 1,Radio Days,0
 1,The Last Emperor,1
 1,Au revoir les enfants,0
@@ -166,12 +138,8 @@ year,film,winner
 1,When Harry Met Sally...,0
 1,Goodfellas,1
 1,Crimes and Misdemeanors,0
-1,Driving Miss Daisy,0
-1,Pretty Woman,0
 1,The Commitments (film),1
 1,Dances with Wolves,0
-1,The Silence of the Lambs (film),0
-1,Thelma & Louise,0
 1,Howards End (film),1
 1,The Crying Game,0
 1,The Player (1992 film),0
@@ -183,8 +151,6 @@ year,film,winner
 1,Shadowlands (1993 film),0
 1,Four Weddings and a Funeral,1
 1,Forrest Gump,0
-1,Pulp Fiction,0
-1,Quiz Show (film),0
 1,Sense and Sensibility (film),1
 1,Babe (film),0
 1,The Madness of King George,0
@@ -200,12 +166,10 @@ year,film,winner
 1,Shakespeare in Love,1
 1,Elizabeth (film),0
 1,Saving Private Ryan,0
-1,The Truman Show,0
 1,American Beauty (1999 film),1
 1,East Is East (1999 film),0
 1,The End of the Affair (1999 film),0
 1,The Sixth Sense,0
-1,The Talented Mr. Ripley (film),0
 1,Gladiator (2000 film),1
 1,Almost Famous,0
 1,Billy Elliot,0
@@ -218,14 +182,12 @@ year,film,winner
 1,Shrek,0
 1,The Pianist (2002 film),1
 1,Chicago (2002 film),0
-1,Gangs of New York,0
 1,The Hours (film),0
 1,The Lord of the Rings: The Two Towers,0
 1,The Lord of the Rings: The Return of the King,1
 1,Big Fish,0
 1,Cold Mountain (film),0
 1,Lost in Translation (film),0
-1,Master and Commander: The Far Side of the World,0
 1,The Aviator (2004 film),1
 1,Eternal Sunshine of the Spotless Mind,0
 1,Finding Neverland (film),0
@@ -235,7 +197,6 @@ year,film,winner
 1,Capote (film),0
 1,The Constant Gardener (film),0
 1,Crash (2004 film),0
-1,"Good Night, and Good Luck",0
 1,The Queen (2006 film),1
 1,Babel (film),0
 1,The Departed,0
@@ -245,7 +206,6 @@ year,film,winner
 1,American Gangster (film),0
 1,The Lives of Others,0
 1,No Country for Old Men,0
-1,There Will Be Blood,0
 1,Slumdog Millionaire,1
 1,The Curious Case of Benjamin Button (film),0
 1,Frost/Nixon (film),0
@@ -255,42 +215,31 @@ year,film,winner
 1,Avatar (2009 film),0
 1,An Education,0
 1,Precious (film),0
-1,Up in the Air (2009 film),0
 1,The King's Speech,1
 1,Black Swan (film),0
 1,Inception,0
 1,The Social Network,0
-1,True Grit (2010 film),0
 1,The Artist (film),1
 1,The Descendants,0
-1,Drive (2011 film),0
-1,The Help (film),0
-1,Tinker Tailor Soldier Spy (film),0
 1,Argo (2012 film),1
 1,Les Misérables (2012 film),0
 1,Life of Pi (film),0
 1,Lincoln (film),0
-1,Zero Dark Thirty,0
 1,12 Years a Slave (film),1
 1,American Hustle,0
-1,Captain Phillips (film),0
 1,Gravity (2013 film),0
 1,Philomena (film),0
 1,Boyhood (2014 film),1
 1,Birdman (film),0
-1,The Grand Budapest Hotel,0
-1,The Imitation Game,0
 1,The Theory of Everything (2014 film),0
 1,The Revenant (2015 film),1
 1,The Big Short (film),0
-1,Bridge of Spies (film),0
 1,Carol (film),0
 1,Spotlight (film),0
 1,La La Land,1
 1,Arrival (film),0
 1,"I, Daniel Blake",0
 1,Manchester by the Sea (film),0
-1,Moonlight (2016 film),0
 1,"Three Billboards Outside Ebbing, Missouri",1
 1,Call Me by Your Name (film),0
 1,Darkest Hour (film),0
@@ -300,19 +249,15 @@ year,film,winner
 1,BlacKkKlansman,0
 1,The Favourite,0
 1,Green Book (film),0
-1,A Star Is Born (2018 film),0
 1,1917 (2019 film),1
 1,The Irishman,0
-1,Joker (2019 film),0
 1,Once Upon a Time in Hollywood,0
 1,Parasite (2019 film),0
 1,Nomadland (film),1
 1,The Father (2020 film),0
 1,The Mauritanian,0
 1,Promising Young Woman,0
-1,The Trial of the Chicago 7,0
 1,The Power of the Dog (film),1
 1,Belfast (film),0
 1,Don't Look Up,0
-1,Dune (2021 film),0
 1,Licorice Pizza,0
