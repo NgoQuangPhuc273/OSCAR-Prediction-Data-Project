@@ -1,96 +1,74 @@
-import numpy as np
 import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import confusion_matrix
+from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
-import plotly.express as px
 import seaborn as sb
 sb.set()
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-from sklearn import tree
 
-
-data = pd.read_csv('csv/final_movie_dataset.csv')
-
-feat_awards = ['GG_drama_winner', 'GG_drama_nominee', 'GG_comedy_winner', 'GG_comedy_nominee',
-               'BAFTA_winner', 'BAFTA_nominee', 'DGA_winner', 'DGA_nominee',
-               'PGA_winner', 'PGA_nominee', 'CCMA_winner', 'CCMA_nominee',
-               'Golden_Palm_winner', 'Golden_Palm_nominee', 'Golden_Bear_winner', 'Golden_Bear_nominee',
-               'Golden_Lion_winner', 'Golden_Lion_nominee', 'PCA_winner', 'PCA_nominee',
-               'NYFCC_winner', 'NYFCC_nominee', 'OFCS_winner', 'OFCS_nominee'] #24
-
-oscar_nominee = ['Oscar_nominee']
-
-film_elements = ['Runtime (min)', 'Action', 'Adventure', 'Animation', 'Biography', 
-                      'Comedy', 'Crime', 'Drama', 'Family', 'Fantasy', 'History', 'Horror', 'Musical', 'Mystery', 
-                      'Romance', 'Sci-Fi', 'Sport','Thriller', 'War', 'Western']  # Genre - binary  #20
-
-movie_critics = ['IMDb_rating', 'IMDb_votes','RT_rating','RT_review','Metascore']  #5
-
-commercial = ['Budget','Domestic (US) gross', 'International gross', 'Worldwide gross'] #4
-
-awards = ['GG_drama_winner', 'GG_drama_nominee', 'GG_comedy_winner', 'GG_comedy_nominee',
-               'BAFTA_winner', 'BAFTA_nominee', 'DGA_winner', 'DGA_nominee',
-               'PGA_winner', 'PGA_nominee', 'CCMA_winner', 'CCMA_nominee',
-               'Golden_Palm_winner', 'Golden_Palm_nominee', 'Golden_Bear_winner', 'Golden_Bear_nominee',
-               'Golden_Lion_winner', 'Golden_Lion_nominee', 'PCA_winner', 'PCA_nominee',
-               'NYFCC_winner', 'NYFCC_nominee', 'OFCS_winner', 'OFCS_nominee']
-
-oscar_nominee = ['Oscar_nominee']
-
-all_feature = []
-all_feature = film_elements + movie_critics + commercial + awards
-
-class color:
-   PURPLE = '\033[95m'
-   CYAN = '\033[96m'
-   DARKCYAN = '\033[36m'
-   BLUE = '\033[94m'
-   GREEN = '\033[92m'
-   YELLOW = '\033[93m'
-   RED = '\033[91m'
-   BOLD = '\033[1m'
-   UNDERLINE = '\033[4m'
-   END = '\033[0m'
-
+#Function to calculate Accuracy Parameters (TPR,TNR,FPR,FNR)
 def get_rate(conArray):
     con = conArray.ravel()
     TN = con[0]
     FP = con[1]
     FN = con[2]
     TP = con[3]
-    
     TNR = TN/(TN+FP)
     FNR = FN/(FN+TP)
     TPR = TP/(TP+FN)
     FPR = FP/(TN+FP)
+    print("True negative rate: ", TNR.round(2))
+    print("False negative rate: ", FNR.round(2))
+    print("True positive rate: ", TPR.round(2))
+    print("False positive rate: ", FPR.round(2))
     
-    print(color.RED + "True Positive Rate  \t " + color.RED +": ", TPR.round(3), color.END)
-    print("True Negative Rate  \t : ", TNR.round(3))
-    print("False Positive Rate \t : ", FPR.round(3))
-    print("False Negative Rate \t : ", FNR.round(3))
+df = pd.read_csv('csv/final_movie_dataset.csv')
+
+df['Metascore'] = df['Metascore'].fillna(0)
+
+#prepare your ingredients
+X = ['Runtime (min)', 'Action', 'Adventure', 'Animation', 'Biography', 'Comedy', 'Crime', 
+     'Drama', 'Family','Fantasy', 'History', 'Horror', 'Musical', 'Mystery', 'Romance', 
+     'Sci-Fi', 'Sport','Thriller', 'War', 'Western','Budget','Domestic (US) gross',
+     'International gross','Worldwide gross','Metascore', 'IMDb_rating', 'IMDb_votes', 'RT_rating', 'RT_review',
+     'GG_drama_winner', 'GG_drama_nominee', 'GG_comedy_winner', 'GG_comedy_nominee',
+     'BAFTA_winner', 'BAFTA_nominee', 'DGA_winner', 'DGA_nominee',
+     'PGA_winner', 'PGA_nominee', 'CCMA_winner', 'CCMA_nominee',
+     'Golden_Palm_winner', 'Golden_Palm_nominee', 'Golden_Bear_winner', 'Golden_Bear_nominee',
+     'Golden_Lion_winner', 'Golden_Lion_nominee', 'PCA_winner', 'PCA_nominee',
+     'NYFCC_winner', 'NYFCC_nominee', 'OFCS_winner', 'OFCS_nominee']
 
 #prep the x variables and y variables
-X_set_movie_critics = data[feat_awards]
-y_set_movie_critics = data['Oscar_winner']
+X_set = df[X]
+y_set = df['Oscar_winner']
 
 #split the dataset
-X_train, X_test, y_train, y_test = train_test_split(X_set_movie_critics, y_set_movie_critics, test_size = 0.25)
+X_train, X_test, y_train, y_test = train_test_split(X_set, y_set, test_size = 0.25)
 
-forest = RandomForestClassifier(
-    max_depth=25,
-    min_samples_split=15,
-    n_estimators=1000,
-    random_state=1)
+RF = RandomForestClassifier(n_estimators = 100,
+                                    max_depth = 4)
+RF_xTrain = X_train
+RF_xTest = X_test
+RF_yTrain = y_train
+RF_yTest = y_test
 
-my_forest = forest.fit(X_train, y_train)
+#fit data
+RF.fit(RF_xTrain, RF_yTrain)
 
-forest_importances = pd.DataFrame(my_forest.feature_importances_.round(3), feat_awards, columns=["Weight"])
+#predict response
+RFy_trainPred = RF.predict(RF_xTrain)
+RFy_testPred = RF.predict(RF_xTest)
 
-print(forest_importances)
-print('Score', my_forest.score(X_train, y_train))
+#visualise the result
+f,axes = plt.subplots(1,2,figsize = (20,8))
+sb.heatmap(confusion_matrix(RF_yTrain, RFy_trainPred), annot = True, annot_kws={"size":20}, ax = axes[0], fmt='.0f')
+sb.heatmap(confusion_matrix(RF_yTest, RFy_testPred), annot = True, annot_kws={"size":20}, ax = axes[1], fmt = '.0f')
 
-forest_importances['Features'] = feat_awards
-fig = px.bar(forest_importances, x='Features', y='Weight', 
-             title='Features Importances', height=600)
-fig.show()
-
+print("Classification accuracy for train set: ", RF.score(RF_xTrain, RF_yTrain).round(3))
+print("Classification accuracy for test set: ", RF.score(RF_xTest, RF_yTest).round(3))
+print()
+print("For train set:")
+get_rate(confusion_matrix(RF_yTrain, RFy_trainPred))
+print()
+print("For test set:")
+get_rate(confusion_matrix(RF_yTest, RFy_testPred))

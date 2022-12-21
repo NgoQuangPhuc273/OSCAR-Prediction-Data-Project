@@ -1,5 +1,16 @@
+import numpy as np
 import pandas as pd
+#-----------classifiers------------------------
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import GaussianNB
+from sklearn.naive_bayes import BernoulliNB
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.svm import SVC
+from lightgbm import LGBMClassifier
+#----------------------------------------------
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
@@ -46,29 +57,29 @@ y_set = df['Oscar_winner']
 X_train, X_test, y_train, y_test = train_test_split(X_set, y_set, test_size = 0.25)
 
 #create object
-logic = LogisticRegression()
-LR_xTrain = X_train
-LR_xTest = X_test
-LR_yTrain = y_train
-LR_yTest = y_test
+lg = LGBMClassifier()
+LG_xTrain = X_train
+LG_xTest = X_test
+LG_yTrain = y_train
+LG_yTest = y_test
 
 #fit data
-logic.fit(LR_xTrain, LR_yTrain)
+lg.fit(LG_xTrain, LG_yTrain)
 
 #predict response
-LRy_trainPred = logic.predict(LR_xTrain)
-LRy_testPred = logic.predict(LR_xTest)
+LRy_trainPred = lg.predict(LG_xTrain)
+LRy_testPred = lg.predict(LG_xTest)
 
 #visualise data
 f,axes = plt.subplots(1,2, figsize=(20,8))
-sb.heatmap(confusion_matrix(LR_yTrain, LRy_trainPred), annot=True, annot_kws={"size":20}, ax = axes[0], fmt = '.0f')
-sb.heatmap(confusion_matrix(LR_yTest, LRy_testPred),annot=True, annot_kws={"size":20}, ax = axes[1], fmt='.0f')
+sb.heatmap(confusion_matrix(LG_yTrain, LRy_trainPred), annot=True, annot_kws={"size":20}, ax = axes[0], fmt = '.0f')
+sb.heatmap(confusion_matrix(LG_yTest, LRy_testPred),annot=True, annot_kws={"size":20}, ax = axes[1], fmt='.0f')
 
-print("Classification accuracy for train set: ", logic.score(LR_xTrain, LR_yTrain).round(3))
-print("Classification accuracy for test set: ", logic.score(LR_xTest, LR_yTest).round(3))
+print("Classification accuracy for train set: ", lg.score(LG_xTrain, LG_yTrain).round(3))
+print("Classification accuracy for test set: ", lg.score(LG_xTest, LG_yTest).round(3))
 print()
 print("For train set:")
-get_rate(confusion_matrix(LR_yTrain, LRy_trainPred))
+get_rate(confusion_matrix(LG_yTrain, LRy_trainPred))
 print()
 print("For test set:")
-get_rate(confusion_matrix(LR_yTest, LRy_testPred))
+get_rate(confusion_matrix(LG_yTest, LRy_testPred))

@@ -1,0 +1,16 @@
+This is the required libraries that you need to install to run the program:
+
+pip install bs4
+pip install pandas
+pip install numpy
+pip install requests
+pip install re
+pip install time
+pip install datetime
+pip install rotten_tomatoes_scraper
+pip install traceback
+pip install sklearn
+pip install matplotlib
+pip install seaborn
+pip install lightgbm
+pip install plotly

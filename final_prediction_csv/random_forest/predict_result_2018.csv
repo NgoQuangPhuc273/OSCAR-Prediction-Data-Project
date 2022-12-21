@@ -1,0 +1,11 @@
+,Year,Movie,Oscar_nominee,Oscar_winner,Predicted Win Rate
+308,2018,Spider-Man: Into the Spider-Verse,0,0,0.018
+318,2018,Hereditary,0,0,0.027
+321,2018,BlacKkKlansman,1,0,0.036
+344,2018,Vice,1,0,0.045
+301,2018,Black Panther,1,0,0.045
+310,2018,A Star Is Born,1,0,0.073
+325,2018,The Favourite,1,0,0.073
+303,2018,Bohemian Rhapsody,1,0,0.109
+330,2018,Roma,1,0,0.255
+309,2018,Green Book,1,1,0.273

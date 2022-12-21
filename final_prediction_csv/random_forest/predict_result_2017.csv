@@ -1,0 +1,11 @@
+,Year,Movie,Oscar_nominee,Oscar_winner,Predicted Win Rate
+215,2017,Coco,0,0,0.01
+203,2017,Star Wars: Episode VIII - The Last Jedi,0,0,0.02
+257,2017,Phantom Thread,1,0,0.02
+236,2017,"I, Tonya",0,0,0.031
+207,2017,Get Out,1,0,0.031
+224,2017,Lady Bird,1,0,0.041
+205,2017,Dunkirk,1,0,0.041
+230,2017,Call Me by Your Name,1,0,0.082
+211,2017,"Three Billboards Outside Ebbing, Missouri",1,0,0.092
+213,2017,The Shape of Water,1,1,0.633

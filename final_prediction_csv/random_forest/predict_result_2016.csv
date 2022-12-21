@@ -1,0 +1,11 @@
+,Year,Movie,Oscar_nominee,Oscar_winner,Predicted Win Rate
+129,2016,Jason Bourne,0,0,0.0
+137,2016,The Secret Life of Pets,0,0,0.0
+199,2016,The Boy,0,0,0.0
+131,2016,Ghostbusters,0,0,0.01
+109,2016,Hacksaw Ridge,1,0,0.019
+130,2016,Lion,1,0,0.019
+116,2016,Moonlight,1,1,0.038
+105,2016,Arrival,1,0,0.048
+122,2016,Manchester by the Sea,1,0,0.048
+107,2016,La La Land,1,0,0.819

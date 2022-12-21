@@ -1,150 +1,125 @@
-# ECON 312: Predict The Academy Award Results Through Machine Learning
+# **ECON 312: Predict The Academy Award Results Through Machine Learning**
 
 Phuc Ngo, Zach Moskowitz, Ryan Blasberg
 
 
-## I. Introduction:
+## **I. Introduction:**
+The Academy Awards, also known as the OSCARs, is the most prestigious annual event that recognizes outstanding achievements in the film industry across a variety of categories. The first Academy Awards ceremony was held in 1928, and since then it has taken place around late February each year. For professionals in the film industry, receiving an OSCAR can lead to increased recognition and opportunities, such as higher salaries and a wider range of roles or films to choose from in the future. The Academy of Motion Picture Association (AMPAS) organizes the OSCARs every year, and the ceremony is highly anticipated by both industry insiders and movie fans. Since the award's inception, there have been 563 movies nominated for Best Picture and 92 winners.
 
-## II. Description:
-In this project, we focus on deeply analyzing the Best Picture category to predict the next Oscar Winners by the distributed percentage of winning.
+In addition to the financial benefits for the film industry, the general public also has an interest in predicting the outcomes of the OSCARs. Moviegoers may participate in polls and discussions about who they think will win, and it is even possible to place bets on the OSCARs on various websites. Therefore, accurately forecasting the OSCAR winners and identifying any trends can be of great interest to many people. In this project, we aim to predict which film will win the OSCAR for the Best Picture category based on various factors and metrics that could potentially influence the final decision of film critics.
+
+## III. Installation & Requirements:
+
+Please go to requirements.txt for needed libraries.
+
+## IV. Running:
+
+1. Go to extract_and_merge folder and run extract_main.py to extract data.
+2. Run merging.py to merge different data sets into a main one.
+3. Go to implement_algorithms_and_predictions folder and run run_predictions.py to execute the predicting process.
+4. Go to final_predictions_graphs/predictions to see the predicted Oscar winners for each year!
+
+You can also go to implement_algorithms_and_predictions/implement_algo and run each of the models to see the actuall Classification accuracy, True negative rate, False negative rate True positive rate, and False positive rate for each model.
+
+## **II. Description & Explanation:**
+
+**1. Important Questions:**
+
+- Which prediction model would be the most effective with the data we have?
+- What characteristics of a film contribute to its potential to win an Oscar?
+- Is it possible to accurately predict the winners of the Oscars based on the features of a film?
+
+To investigate these questions, we will attempt to predict the winners of the Academy Award for Best Picture, and as part of that process, we will evaluate the features of a film that make it stand out compared to others.
 
 Our plan is to extract the top 100 movie data ranked according to the number of votes from IMDB for each year from 1999 to 2020. Then, we scrape other websites and match the new data to existed data frame according to the movie title.
 
-IMDB data types:
-Movie title, Year, Runtime, Certificate, Genre, IMDB ratings, IMDB number of votes, Metascore, Directors, Actors
+**2. Metrics:**
 
-Rotten Tomatoes data types:
-Critics Rating, Number of reviews
+Film Elements:
+- Runtime
+- Genre
 
-The numbers:
-Domestic box office 
-International box office
+Movie Critics Ratings:
+- IMDb User Rating
+- IMDB User Votes
+- Rotten Tomatoes Critics Rating
+- Rotten Tomatoes Critics Review
+- Metascore
 
-Next, we extract the awards data from Wikipedia. List of awards:
-Director Guild Awards (DGA)
-British Academy Film Awards (BAFTA)
-Producer Guild Awards (PGA)
-Golden Globes Awards for Drama (GG_drama)
-Golden Globes Awards for Comedy (GG_comedy)
-Cannes Film Festival (Golden Palm)
-Critics' Choice Movie Awards (CCMA)
+Commercial
+- Budget
+- Domestic (US) gross
+- International gross
+- Worldwide gross
 
-And the most important award:
-Academy Award - Best Picture
+Film Awards
+- The British Academy of Film and Television Arts Film Awards (BAFTA)  
+- Director Guild Awards (DGA)  
+- Producer Guild Awards (PGA)  
+- Golden Globes - Comedy  
+- Golden Globes – Drama 
+- Cannes International Film Festival (Golden Palm)  
+- Berlin International Film Festival (Golden Bear)  
+- Venice Film Festival (Golden Lion)  
+- Toronto Film Festival – People Choice’s Award  
+- New York Film Critics Circle (NYFCC) Award for Best Picture  
+- Critics’ Choice Movie Award (CCMA) for Best Picture  
+- Online Film Critics Society Award (OFCSA) for Best Picture  
 
-Next, we perform some data cleaning (unformatted names and numbers, general stemming, and lemmatization) and merge different tables generated through data wrangling into one big data set. 
+**3. Extracting & cleaning data:**
 
-#### Machine Learning Model:
-Random Forest is one of the best approaches when dealing with classification. In this project, we primarily concentrate on implementing Random Forest to create a model that can:
+For this project, we decided to self-extract the needed data for our models using BeautifulSoup, requests, and rotten_tomatoes_scraper to build our datasets from scratch. Meanwhile, we will also perform data-cleaning whenever it is necessary.
 
-- Classify and rank the importance of different metrics (54 attributes)
-- Produce the highest accuracy possible
-- Successfully predict the future Oscar winner by learning through past candidates.
+We studied the HTML structure of these websites:
 
-We will attempt to apply the model to each year, look at the results of them and finally predict the 2022 Oscar winner!
+https://www.imdb.com/search/title/?title_type=feature&release_date=%s&sort=num_votes,desc&count=100
 
+https://www.the-numbers.com/movie/budgets/all/
 
-## III. Installation:
-You will need to install these python libraries to run the program.
-
-```bash
-pip install pandas
-pip install bs4
-pip install sklearn
-pip install matplotlib
-pip install seaborn
-pip install plotly
-```
-
-## IV. Running:
-(This is the update for the first implementaion. The final write up will be completely different.)
-
-1. Run extract_main.py to extract data.
-
-2. Run merging.py to merge different data sets into a main one.
-
-3. Run implement_{algorithm}.py (decision tree, random forest or logistic regression) to execute the program.
-
-4. Run winner_prediction.py to see the predicted winners for the next Oscar!
+https://en.wikipedia.org/wiki/
 
 
-### However, that is when the project is finished!
+https://www.rottentomatoes.com/top/bestofrt/year
 
-Initally, we used the alternate IMDB_API (or CinemaGoer) and OMDB to extract data. However, both apis are too inconsistent so we have decided to switch to scrape and extract data ourselves. 
+**4. Implement Machine Learning Models:**
 
-This was a very confusing and complicated at first since since we have to deal with many data types at once. However, the process becomes more and more exciting when we get used to it due to the fact that we can deeply understand how a data flows (or pipelines) can work (more similar the work of data engineers). 
+We classified all 53 features we have into 4 main categories:
+Movie Elements, Critics Ratings, Box Office and Awards.
 
-#### At the moment, we have successfully self-extract, scraping, cleaning and merging the movies data from 1990 to 2020 through several websites such as:
+We chose to use four machine learning approaches:
+- Decision Tree
+- Random Forest
+- Logistic Regression
+- Light Gradient-Boost Machine
 
-https://en.wikipedia.org/ (awards data)
+to examine how well is each feature category in predicting the Oscar winner (accuracy, true & false negative/positve rate) and also find out which model will best suit the final movie dataset.
 
-https://www.the-numbers.com/movie/budgets/all (box office)
+**5. Predicting the winners:**
 
-https://editorial.rottentomatoes.com/guide/best-movies/ (rotten tomatoes score)
+For the last part of our project, we will try to predict the actual Oscar winner directly using the 'predict_proba' function from each model to determine the predicted winner based on the probability of winning. 
 
-https://www.metacritic.com/feature/film-critics-pick-10-best-movies-of-2020 (metacritics score)
-
-https://www.imdb.com/search/title/?title_type=feature&release_date=2020&sort=num_votes,desc&count=100 (imdb data in specific year)
-
-#### as well as some useful APIs:
-
-```python
-rotten_tomatoes_scraper
-Cinemagoer
-```
-#### to create separate datasets in csv folder:
-
-Rating and information datasets:
-
-```
-imdb.csv
-box_office.csv
-rotten.csv
-```
-
-Awards datasets:
-
-```
-oscar.csv
-BAFTA.csv
-CCMA.csv
-DGA.csv
-GG_comedy.csv
-GG_drama.csv
-PGA.csv
-```
-
-#### then merge all of them together to form a complete data set: 
-```
-first_movie_dataset.csv
-```
-Initially, the merging process works well whenever we run the extract_main.py. 
-
-However, we currently face some trouble with extracting the box office data as well as the data for the Cannes (Golden Palm) award when we carry out several data wrangling and cleaning new metrics. Hence, the merging process is also affected. 
-
-The "first_movie_dataset" is the first dataset that we collected before adding new metrics. It contains almost all data that we think is neccessary for prediction. Thus, we can still run implement_random_forest.py and calculating_algo_accuracy.py to see the needed attributes and there importance ranking (or weight).
+We will also be using the 'feature_importance_' function to visualise the weightage of importance of each feature in different classifiers. We will split our movie dataset to training set (1999-2014) and testing set (2015-2019).
 
 
-### Therefore, the correct way to run the program for now is:
+## V. Results and Analysis:
 
-1. Run extract_main.py to extract data.
+We were quite sucessfully in answering the questions raised at the beginning of the project!
 
-2. Do not run this new version of merging.py and go the next step!
+- Which prediction model would be the most effective with the data we have?
 
-3. Run implement_random_forest.py to execute the program and see some first results (important metrics ranking).
+Random Forest and Light Gradient Boosting Machine (LGBM) were equally good.
 
+Logistic Regression came second.
 
-## V. Future Work:
-The hardest and most frustrate work for us in this project so far is properly extracting the data from different websites, cleaning and merging data to create a perfect unbias primary data set.
+Decision Tree was the worst one.
 
-Hence, our future work will focus on:
+- What characteristics of a film contribute to its potential to win an Oscar?
 
-- Fixing bugs resulted from box office extracting and add cannes data to the dataset.
-- Finish prediction file based on results from Random Forest Classifier.
-- Provide more helpful visualizations through out the process so that the audiences can can understand more clearly.
-- Implement Decision Trees and Logistic Regression.
-- Automation using Apache Airflow to schedule the program to run before the next Oscars happens!
+For Random Forest: Director Guild Awards, Producer Guild Award or the Critics' Choice Movie Awards
 
+For LGBM: critical ratings (IMDb_ratings, Tomatometer, Metascore)
 
+- Is it possible to accurately predict the winners of the Oscars based on the features of a film?
 
+The answers will depend on many factors. Indeed, no model can predict 5/5 correctly. The maximum accuracy we can get is 3/5 (Random Forest and LGBM).
 

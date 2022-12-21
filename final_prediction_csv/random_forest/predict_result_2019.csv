@@ -1,0 +1,11 @@
+,Year,Movie,Oscar_nominee,Oscar_winner,Predicted Win Rate
+444,2019,Murder Mystery,0,0,0.0
+416,2019,Ford v Ferrari,1,0,0.008
+413,2019,Marriage Story,1,0,0.023
+418,2019,Jojo Rabbit,1,0,0.023
+407,2019,The Irishman,1,0,0.023
+442,2019,Little Women,1,0,0.031
+400,2019,Joker,1,0,0.078
+404,2019,Parasite,1,1,0.116
+402,2019,Once Upon a Time in Hollywood,1,0,0.248
+408,2019,1917,1,0,0.45
